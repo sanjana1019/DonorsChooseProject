@@ -165,7 +165,7 @@ public class Main {
 		ProjectData data = mapper.readValue(url, ProjectData.class); 
 		//turns instance back to JSON
 		String json = mapper.writeValueAsString(data);
-		//turns JSON back into an instance 
+		//turns JSON back into an instance here
 		data = mapper.readValue(json, ProjectData.class); 
 		return data;
 	}
